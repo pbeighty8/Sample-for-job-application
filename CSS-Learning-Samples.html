@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Samples</title>
+</head>
+
+<style>
+
+    body {
+        background-color: floralwhite;
+        height: 5000px;
+    }
+    header {
+        font-size: 50px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+</style>
+
+<body>
+    <header>CSS Learning Samples</header>
+
+    <h1>#1 CSS selectors</h1>
+
+    <style>
+        h3 {
+            color:blue
+        }
+        .div1 {
+            color: blueviolet;
+            text-decoration: line-through;
+        }
+        .div2 {
+            background-color: lightcoral;
+            text-align: center;
+            width: 50%
+        }
+        p {
+            background-color: darkgoldenrod;
+        }
+        .p2 {
+            background-color: yellowgreen;
+            text-decoration: underline;
+            font-size: 25px;
+            font-style: italic;
+        }
+        #center-cell5 {
+            background-color: yellow;
+            color: red;
+        }
+        table {
+            border: 1px solid black;
+            border-radius: 7%;
+        }
+    </style>
+
+    <h3>This is h3</h3>
+    <div class="div1">This is div</div>
+    <div class="div2">This is div2</div>
+    <p>This is paragraph 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias exercitationem autem numquam consequatur maxime atque illum nihil veritatis id cum repellendus officia ab iste animi itaque, vitae hic beatae.</p>
+    <p class="p2">This is paragraph 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem in porro facilis fuga? Assumenda similique sint ipsa molestias adipisci laudantium placeat labore delectus sunt modi. Suscipit velit expedita sint!</p>
+
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td id="center-cell5">Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+            <td>Cell 9</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+
+    <h1>#2 Display types</h1>
+
+    <style>
+        .displayDiv {
+            display: inline;
+            border: 1px solid red;
+            
+        }
+        .displayDiv2 {
+            display: inline-block;
+            border: 1px solid red;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .displayDiv3 {
+            display: block;
+            border: 1px solid red;
+            width: 150px;
+        }
+    </style>
+    <div class="displayDiv">
+        This is a block element
+    </div>
+    <div class="displayDiv">
+        This is a block element
+    </div>
+    <br>
+    <div class="displayDiv2">
+        This is a block element
+    </div>
+    <div class="displayDiv2">
+        This is a block element
+    </div>
+    <br>
+    <div class="displayDiv3">
+        This is a block element
+    </div>
+    <div class="displayDiv3">
+        This is a block element
+    </div>
+
+    <br><br>
+    <hr>
+
+
+    <h1>#3 Adding box & text shadow</h1>
+
+    <style>
+        #box {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-image: url(https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 0 50% 0 50%;
+            box-shadow: 10px 10px 5px darkgrey;
+        }
+        #text {
+            font-size: 20px;
+            text-shadow: 2px 2px 4px grey;
+        }
+    </style>
+
+
+    <div id="box"></div>
+    <div id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi fuga odit aperiam repellendus tempore sapiente ipsam voluptate pariatur dignissimos quae quisquam nobis, minima similique quas debitis, veniam accusantium nostrum?</div>
+    <br>
+    <hr>
+
+
+    <h1>#4 Sticky positioning</h1>
+
+    <style>
+        .boxSticky {
+            background-color: lightskyblue;
+            border-bottom: 2px solid #ccc;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+
+    <div class="boxSticky">
+        Section 1
+    </div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+
+    <div class="boxSticky">
+        Section 2
+    </div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam repudiandae aut optio hic? A nostrum eum eius nemo porro natus beatae. Eum suscipit vitae ullam laboriosam exercitationem, earum id.</div>
+    <br>
+    <hr>
+
+
+    <h1>#5 Overflowing text</h1>
+
+    <style>
+        .otbox {
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            background-color: lightgray;
+        }
+    </style>
+
+    <div class="otbox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus tempore quidem placeat eaque facilis, ipsum nihil dolores nulla dolor repellat. Temporibus non quam illo exercitationem consequatur odit ipsum obcaecati!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus tempore quidem placeat eaque facilis, ipsum nihil dolores nulla dolor repellat. Temporibus non quam illo exercitationem consequatur odit ipsum obcaecati!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus tempore quidem placeat eaque facilis, ipsum nihil dolores nulla dolor repellat. Temporibus non quam illo exercitationem consequatur odit ipsum obcaecati!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus tempore quidem placeat eaque facilis, ipsum nihil dolores nulla dolor repellat. Temporibus non quam illo exercitationem consequatur odit ipsum obcaecati!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus tempore quidem placeat eaque facilis, ipsum nihil dolores nulla dolor repellat. Temporibus non quam illo exercitationem consequatur odit ipsum obcaecati!
+    </div>
+    <br>
+    <hr>
+
+
+    <h1>#6 Smooth transition</h1>
+
+    <style>
+        a {
+            background-color: white;
+            display: inline-block;
+            padding: 5px 15px;
+            color: #000;
+            text-decoration: none;
+            border: 2px solid black;
+            transition: background-color 0.5s,
+                        color 0.5s,
+                        padding 0.5s;
+        }
+        a:hover {
+            background-color: darkorange;
+            color: white;
+            padding: 10px 30px;
+        }
+    </style>
+
+    <a href="#" class="button">Hover me!</a>
+    <br><br>
+    <hr>
+
+
+    <h1>#7 Animation using CSS</h1>
+
+    <style>
+        .boxAnimation {
+            background-color: firebrick;
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            animation-name: slideMe;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes slideMe {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%
+            }
+        }
+    </style>
+
+    <div class="boxAnimation"></div>  
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+
+
+    <h1>#8 Flexbox</h1>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container div {
+            /* border: 1px solid red; */
+        }
+        .navigation {
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        .content {
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .header {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            color: #000;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+    
+    </style>
+
+    <div id="container">
+        <div class="header">
+            Header
+        </div>
+       <div class="navigation">Navigation</div>
+       <div class="content">
+            <h1>Content</h1>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et delectus eligendi! Mollitia debitis esse id veniam repudiandae fuga repellendus animi ducimus sequi similique. Fuga, corrupti ipsum! Ipsa, doloremque rem.</article>
+            <h2>About us</h2>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vel delectus commodi quaerat, cupiditate doloremque ipsam consequuntur. Et, accusamus. Debitis modi laboriosam corrupti incidunt iusto et eaque, sint vel dolores!</article>
+       </div>
+    </div>
+    <br>
+    <hr>
+
+
+    <h1>#9 Grid</h1>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+        }
+        .item {
+            border: 1px solid red;
+        }
+        .item1, .item7 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item6 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item4, .item5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+
+    <div id="grid">
+        <div class="item item1">1</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+    </div>
+    <br>
+    <hr>
+
+
+    <h1>#10 Responsive layout</h1>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        #layout {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #nav {
+            flex-basis: 100%;
+            border-bottom: 1px solid #aaa;
+            padding: 20px
+        }
+        #sidebar {
+            flex-basis: 20%;
+            border-right: 1px solid #aaa;
+            padding: 20px;
+            border-bottom: 1px solid #aaa;
+        }
+        #contentLayout {
+            flex-basis: 80%;
+            padding: 20px;
+            border-bottom: 1px solid #aaa;
+        }
+        @media (max-width: 640px) {
+            #sidebar, #contentLayout {
+                flex-basis: 100%;
+                border-right: 0;
+            }
+        }
+        @media (max-width: 475px) {
+            #sidebar {
+                display: none;
+            }
+        }
+    </style>
+
+    <div id="layout">
+        <div id="nav">
+            Navigation in here
+        </div>
+        <div id="sidebar">
+            Sidebar in here
+        </div>
+        <div id="contentLayout">
+            Content in here
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
